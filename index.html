@@ -23,7 +23,11 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <!-- APP -->
      <script src="src/app.js" async></script>
-  </head>
+    <!-- MidTrans -->
+    <script type="text/javascript"
+    src="https://app.sandbox.midtrans.com/snap/snap.js"
+    data-client-key="SB-Mid-client-sJQ5gXUtQgVU5P2M"></script>
+    </head>
   <body>
     <!-- NAVBAR START-->
     <nav class="navbar" x-data>
@@ -85,7 +89,7 @@
           <input type="text" name="name" id="name">
         </label>
         
-      <form action="" id="checkoutForm">
+      <!-- <form action="" id="checkoutForm"> -->
 
         <label for="email">
           <span>Email</span>
@@ -211,7 +215,7 @@
             </a>
           </div>
           <div class="product-image">
-            <img :src="`img/products/${item.img}.jpg`" :alt= "item.name">
+            <img :src="`img/products/${item.img}`" :alt="item.name">
           </div>
           <div class="product-content">
             <h3 x-text="item.name"></h3>
@@ -278,7 +282,7 @@
 
             </span></div>
           </div>
-        </div>
+        </div> 
       </template>
       </div>    
       </section>
